@@ -13,8 +13,6 @@ class School
     @roster[num]
   end
   def sort
-    new_hash = {}
-    @roster.each {|grade, students| new_hash[grade] = students.sort}
-    new_hash
+    @roster.collect {|grade, students| self[grade] = students.sort}
   end
 end
