@@ -13,6 +13,6 @@ class School
     @roster[num]
   end
   def sort
-    @roster.collect {|grade, students| self.@roster[grade] = students.sort}
+    @roster.collect {|grade, students| students.sort}
   end
 end
